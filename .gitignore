@@ -1,0 +1,13 @@
+# Ignore config files & directories
+/.bundle
+/.idea
+
+# Ignore unnecessary Ruby project components
+*.lock
+/log
+/spec
+/tmp
+/vendor
+
+# Ignore OS cache files
+.DS_Store
