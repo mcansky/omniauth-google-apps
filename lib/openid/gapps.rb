@@ -19,7 +19,11 @@ module OpenID
       return discovered
     rescue OpenID::DiscoveryFailure => e
       info = discover_google_apps(uri)
-      info.nil? ? raise e : return info
+      if info.nil?
+        raise e
+      else
+        return info
+      end
     end
   end
 
